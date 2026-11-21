@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Graphic Design Masterclass | D PixelTactile FIlms and Desgign</title>
+    <meta name="description" content="Master graphic design with our Advanced Graphic Design Masterclass. Learn Adobe Creative Suite, branding, and visual storytelling with real client projects. Taught by industry expert Sarah Johnson.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a',
+                        'navy-light': '#1e293b',
+                        orange: '#f97316',
+                        charcoal: '#33415b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-charcoal bg-white">
+
+    <!-- ===== Navigation Bar ===== -->
+    <nav class="sticky-header sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">SF</span>
+                    </div>
+                    <span class="text-navy font-bold text-xl md:text-2xl">D PixelTactile</span>
+                    <span class="text-orange font-bold text-xl md:text-2xl">Films and Design</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-charcoal hover:text-orange font-medium transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-charcoal hover:text-orange font-medium transition-colors duration-300">About Us</a>
+                    <a href="courses.html" class="text-charcoal hover:text-orange font-medium transition-colors duration-300">Courses</a>         
+                    <a href="contact.html" class="text-charcoal hover:text-orange font-medium transition-colors duration-300">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="https://forms.gle/HTTkF7m64Qc4TVkB7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-orange-500 hover:bg-orange-600 text-navy font-semibold px-5 py-2.5 rounded-lg transition-colors duration-50 shadow-md inline-block">
+                        Book Demo Session
+                    </a>
+                </div>  
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-navy hover:transition-colors" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 py-4 space-y-3">
+                <a href="index.html" class="block py-2 text-charcoal font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-charcoal font-medium">About Us</a>
+                <a href="courses.html" class="block py-2 text-charcoal font-medium">Courses</a>              
+                <a href="contact.html" class="block py-2 text-charcoal font-medium">Contact</a>
+                <a href="contact.html" class="block w-full text-center btn-cta mt-2">Book Demo Session</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Banner ===== -->
+    <section class="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-[#03030c] overflow-hidden">
+    <img src="C:\Users\pc\OneDrive\Documents\Received Files\Images\Banners\graphic design.png"
+         alt="Courses Banner" 
+         class="w-full h-auto min-h-[300px] object-cover block">
+</section>
+
+    <!-- ===== Top Banner ===== -->
+    <section class="bg-navy text-white py-12 md:py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb mb-6">
+                <a href="index.html">Home</a>
+                <span class="text-gray-500">/</span>
+                <a href="courses.html">Courses</a>
+                <span class="text-gray-500">/</span>
+                <span class="text-orange">Advanced Graphic Design Masterclass</span>
+            </nav>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Course Info -->
+                <div class="lg:col-span-2">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4">
+                        Advanced Graphic Design with AI
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        This course is meant for anyone who wants to do freelance work, change their job, or start learning about this area from scratch. In this course, you will discover how to use Adobe Photoshop and AI tools and how to apply them in your projects.
+
+                        Graphic Design focuses on digital designs that share information with images. Graphic design is the skill of making visual content to share messages, ideas, or information with a certain group of people. It mixes pictures, text, colors, and arranging elements to fix visual communication issues.
+                    </p>
+
+                    <!-- Target Audience Tags -->
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="tag text-grey-700">Beginner Friendly</span>
+                        <span class="tag text-grey-700">Intermediate</span>
+                        <span class="tag text-grey-700">Advanced</span>
+                        <span class="tag text-grey-700">Portfolio Project</span>
+                        <span class="tag text-grey-700">Certificate</span>
+                        <span class="tag text-grey-700">Live Sessions</span>
+                    </div>
+
+                    <!-- Course Stats -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        
+                    </div>
+                </div>
+
+                <!-- Sticky Enrollment Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="sticky-sidebar">
+                        <div class="card-dark p-6">
+                            <!-- Thumbnail -->
+                            <div class="relative mb-2">
+                                <img src="C:\Users\pc\OneDrive\Documents\Received Files\Images\Graphic Design.png" alt="Course Thumbnail" class="w-full h-40 object-cover rounded-lg">
+                                <div class="absolute -top-3 -right-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                    42% OFF
+                                </div>
+                            </div>
+
+                            <!-- Pricing -->
+                            <div class="text-center">
+                            <p class="mt-0 mb-5 text-white font-medium">
+                                One-time payment | Lifetime access
+                            </p>
+                            </div>
+
+                         
+                            <!-- CTA Buttons -->
+                        <div class="flex gap-2 w-full">
+                        <button class="flex-1 bg-blue-600 text-white font-bold py-2 rounded-md shadow-md hover:bg-blue-700 transition duration-150 ease-in-out text-center">
+                            Enroll Now
+                        </button>
+                        <button class="flex-1 bg-blue-600 text-white font-bold py-2 rounded-md shadow-md hover:bg-blue-700 transition duration-150 ease-in-out text-center">
+                            Request Demo
+                        </button>
+                        </div>
+                         </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- ===== CTA Banner ===== -->
+    <section class="py-10 md:py-10 bg-gradient-to-r from-navy to-navy-light text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-6 text-center">
+               <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange">60h</div>
+                            <p class="text-sm text-gray-400">Total Content</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange">6</div>
+                            <p class="text-sm text-gray-400">Modules</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange">30</div>
+                            <p class="text-sm text-gray-400">Lessons</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange">10+</div>
+                            <p class="text-sm text-gray-400">Projects</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange">Every month</div>
+                            <p class="text-sm text-gray-400">Live Q&A Sessions</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange">Free </div>
+                            <p class="text-sm text-gray-400">Study Material</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange">NSDC Certified</div>
+                            <p class="text-sm text-gray-400">Certificate</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+    <!-- ===== Main Content ===== -->
+    <section class="bg-grey text-black py-12 md:py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Left Content -->
+                <div class="lg:col-span-2 space-y-12">
+                    <!-- What You Will Learn -->
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-navy mb-6">What You Will Learn</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-gray-700">Typography</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-gray-700">Color Theory</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-gray-700">Composition</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-gray-700">Imagery & Illustration</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-gray-700">Elements of Design</p>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-gray-700">Principles of Design</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-gray-700">Page Layout</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                        <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        </div>
+                                    <p class="text-gray-700">Design Rules</p>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Curriculum -->
+                    <div class="mt-10">
+                        <h2 class="text-2xl md:text-3xl font-bold text-navy mb-1">Course Curriculum / Syllabus</h2>
+                        <p class="text-gray-600 mb-6">6 modules • 30 lessons • 60 hours total content</p>
+
+                        <div class="space-y-4">
+                            <!-- Module 1 -->
+                            <div class="card">
+                                <div data-accordion-header class="p-6 cursor-pointer flex justify-between items-center">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-gradient-to-br from-yellow-500 to-green-600 rounded-lg flex items-center justify-center mr-4">
+                                            <span class="text-white font-bold">1</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-navy">Module 1: Fundamentals & Interface</h3>
+                                           
+                                        </div>
+                                    </div>
+                                    <svg data-accordion-icon class="w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="px-6 pb-6">
+                                        <div class="space-y-3">
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">1.1 Digital Media Basics & Workspace Navigation</span>
+                                                
+                                            </div>
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">1.2 Importing Images & Text Basics</span>
+                                                
+                                            </div>
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">1.3 Combining Images, Text & Shapes</span>
+                                                
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 2 -->
+                            <div class="card">
+                                <div data-accordion-header class="p-6 cursor-pointer flex justify-between items-center">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
+                                            <span class="text-white font-bold">2</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-navy">Module 2: Typography & Styling</h3>
+                                           
+                                        </div>
+                                    </div>
+                                    <svg data-accordion-icon class="w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="px-6 pb-6">
+                                        <div class="space-y-3">
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">2.1 Core Typography Rules & Usage</span>
+                                            
+                                            </div>
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">2.2 Advanced Text Blending & Layer Styles</span>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 3 -->
+                            <div class="card">
+                                <div data-accordion-header class="p-6 cursor-pointer flex justify-between items-center">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center mr-4">
+                                            <span class="text-white font-bold">3</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-navy">Module 3: Selection & Masking Techniques</h3>
+                                           
+                                        </div>
+                                    </div>
+                                    <svg data-accordion-icon class="w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="px-6 pb-6">
+                                        <div class="space-y-3">
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">3.1 Core Selection Tools & Pen Tool Mastery</span>
+                                                
+                                            </div>
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">3.2 Advanced Masking: Clipping, Layer, Gradient & Channel Masks</span>
+                                                
+                                            </div>
+                                            
+                                       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 4 -->
+                            <div class="card">
+                                <div data-accordion-header class="p-6 cursor-pointer flex justify-between items-center">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-teal-600 rounded-lg flex items-center justify-center mr-4">
+                                            <span class="text-white font-bold">4</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-navy">Module 4: Brushes & Retouching</h3>
+                                           
+                                        </div>
+                                    </div>
+                                    <svg data-accordion-icon class="w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="px-6 pb-6">
+                                        <div class="space-y-3">
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">4.1 Digital Painting with Custom Brushes</span>
+                                                
+                                            </div>
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">4.2 Object Removal: Standard Tools vs. AI-Powered Removal</span>
+                                               
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 5 -->
+                            <div class="card">
+                                <div data-accordion-header class="p-6 cursor-pointer flex justify-between items-center">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-gradient-to-br from-red-500 to-pink-600 rounded-lg flex items-center justify-center mr-4">
+                                            <span class="text-white font-bold">5</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-navy">Module 5: Color Theory & Blending</h3>
+                                           
+                                        </div>
+                                    </div>
+                                    <svg data-accordion-icon class="w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="px-6 pb-6">
+                                        <div class="space-y-3">
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">5.1 Color Theory Principles & Application</span>
+                                                
+                                            </div>
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">5.2 Blending Modes & Creative Color Grading</span>
+                                                
+                                            </div>
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">5.3 Camera Raw Filter Processing</span>
+                                             
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 6 -->
+                            <div class="card">
+                                <div data-accordion-header class="p-6 cursor-pointer flex justify-between items-center">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg flex items-center justify-center mr-4">
+                                            <span class="text-white font-bold">6</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-navy">Module 6: Creative Effects & Production</h3>
+                                            
+                                        </div>
+                                    </div>
+                                    <svg data-accordion-icon class="w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="px-6 pb-6">
+                                        <div class="space-y-3">
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">6.1 Professional Filters, Effects & Smart Mockups</span>
+                                              
+                                            </div>
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">6.2 Workflow Automation with Actions</span>
+                                                
+                                            </div>
+                                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                                <span class="text-gray-700">6.3 Final Exporting & File Preparation for Web/Print</span>
+                                             
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+   
+                        
+    <!-- ===== CTA Banner ===== -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-navy to-navy-light text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Design Skills?</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Join our professional design career course today.
+            </p>
+           
+        </div>
+    </section>
+
+        <!-- ===== Footer ===== -->
+    <footer class="bg-navy text-gray-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-y-8 gap-x-4 md:gap-x-6">
+                
+                <!-- Brand & About -->
+                <div class="md:col-span-3">
+                    <div class="flex items-center space-x-3 mb-6">            
+                    <span class="text-orange font-bold text-xl">D PixelTactile Films and Design</span>
+                    
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Empowering learners worldwide with industry-relevant skills through expert-led, project-based online education.
+                    </p>
+                    <div class="flex space-x-3">
+                    <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.52 8.52 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0z"/></svg>
+                    </a>
+                </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="md:col-span-2">
+                <h4 class="text-orange font-bold text-lg mb-6">Quick Links</h4>
+                <ul class="space-y-1 text-sm text-gray-400">
+                    <li><a href="index.html" class="hover:text-orange-500 transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-orange-500 transition-colors">About Us</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition-colors">Courses</a></li>
+                    <li><a href="portfolio.html" class="hover:text-orange-500 transition-colors">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-orange-500 transition-colors">Contact</a></li>
+                    <li><a href="contact.html" class="hover:text-orange-500 transition-colors">Book Demo</a></li>
+                </ul>
+            </div>
+                
+                <!-- Courses -->
+                <div class="md:col-span-2">
+                <h4 class="text-orange font-bold text-lg mb-6">Courses</h4>
+                <ul class="space-y-1 text-sm text-gray-400">
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">Advanced Graphic Design with AI</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">Print Media Design</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">CorelDraw Design</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">Video Editing Pro with AI</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">Motion Graphics Pro</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">Sound Editing</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Marvelous Designer</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Zbrush</a></li>
+                       </ul>
+            </div>
+                <div class="md:col-span-2 pt-0 md:pt-11">
+                    <ul class="space-y-1 text-sm text-gray-400">
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">3D Modeling in Maya</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">3D Modeling in 3Ds Max</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Substance Painter</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">3ds Max/Maya Rig and Animation</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Blender Motion Design</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Architecture Design</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Visual Efects(VFX)</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div class="md:col-span-2">
+                    <h3 class="text-orange font-bold text-lg mb-6">Contact Info</h3>
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="font-semibold text-white">Email</p>
+                            <p class="text-gray-400">hello@dpixeltactilefilmsanddesign.com</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white">Phone</p>
+                            <p class="text-gray-400">+91 97117 37637</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white">Address</p>
+                            <p class="text-gray-400">Onine</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white">Support Hours</p>
+                            <p class="text-gray-400">Mon-Sat: 9AM - 6PM GMT</p>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="mt-6">
+                        <form class="flex">
+                            <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 text-sm text-navy rounded-l-lg focus:outline-none">
+                            <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-r-lg transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9-7-9-7-9 7 9 7z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19V5"></path></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 D PixelTactile Films and Design All rights reserved. | Designed with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

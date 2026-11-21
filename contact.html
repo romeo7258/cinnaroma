@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Book Demo | D PixelTactile Films and Design</title>
+    <meta name="description" content="Contact SkillForge Academy to book a free demo session. Get in touch with our team for general inquiries, course information, or to schedule your free demo class.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a',
+                        'navy-light': '#1e293b',
+                        orange: '#f97316',
+                        charcoal: '#33415b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-charcoal bg-white">
+
+    <!-- ===== Navigation Bar ===== -->
+    <nav class="sticky-header sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">SF</span>
+                    </div>
+                    <span class="text-navy font-bold text-xl md:text-2xl">D PixelTactile</span>
+                    <span class="text-orange font-bold text-xl md:text-2xl">Films and Design</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-charcoal hover:text-orange font-medium transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-charcoal hover:text-orange font-medium transition-colors duration-300">About Us</a>
+                    <a href="courses.html" class="text-charcoal hover:text-orange font-medium transition-colors duration-300">Courses</a>
+                    
+                    <a href="contact.html" class="text-navy hover:text-orange font-medium transition-colors duration-300">Contact</a>
+                </div>
+
+    
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="https://forms.gle/HTTkF7m64Qc4TVkB7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-orange-500 hover:bg-orange-600 text-navy font-semibold px-5 py-2.5 rounded-lg transition-colors duration-50 shadow-md inline-block">
+                        Book Demo Session
+                    </a>
+                </div>                                                         
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-navy hover:bg-gray-100 transition-colors" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 py-4 space-y-3">
+                <a href="index.html" class="block py-2 text-charcoal font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-charcoal font-medium">About Us</a>
+                <a href="courses.html" class="block py-2 text-charcoal font-medium">Courses</a>
+               
+                <a href="contact.html" class="block py-2 text-navy font-medium">Contact</a>
+                <a href="contact.html" class="block w-full text-center btn-cta mt-2">Book Demo Session</a>
+            </div>
+        </div>
+    </nav>
+
+        <!-- ===== Page Header ===== -->
+        <section class="relative text-navy overflow-hidden">
+        <!-- Full-Width Background Image -->
+        <img 
+            src="C:\Users\pc\OneDrive\Documents\Received Files\Images\Banners\contact page.png" 
+            alt="Contact Banner" 
+            class="w-full h-80 object-cover" 
+        />
+
+        <!-- Text Centered Directly Over Image (No Overlay Tint) -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg">
+            Contact Us
+            </h1>
+            <p class="text-lg md:text-xl text-navy max-w-3xl mx-auto drop-shadow-md">
+            Have questions? Want to book a free demo session? Reach out to us and we'll get back to you within 24 hours.
+            </p>
+        </div>
+        </section>
+
+   
+
+        <!-- Right Column: Contact Form -->
+        <section class="py-12 md:py-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-1 gap-12">
+               <div>
+        <div class="bg-white rounded-2xl shadow-2xl p-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-navy mb-4">Student Enquiry Form</h2>
+
+        <p class="text-gray-600 mb-6">
+            Fill out this form to schedule a free, no-obligation demo session with one of our expert instructors. We'll connect with you within 24 hours.
+        </p>
+
+        <!-- Hidden Iframe to handle Google Form response silently -->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){alert('Thank you! Your demo request has been received.'); window.location.reload();}"></iframe>
+
+        <!-- Form Wrapper -->
+        <div class="border-2 border-dashed border-gray-200 rounded-xl p-6 bg-gray-50">
+            <div class="bg-white rounded-lg p-6 shadow-inner">
+                
+                <form id="contactForm" 
+                      action="https://docs.google.com/forms/d/e/1FAIpQLScRTE3XaVE-JZyqMpWDpsdvjCigjJBkf-H3i4qJWIqJB0oSDA/viewform?usp=sharing&ouid=101630148032734542912" 
+                      method="POST" 
+                      target="hidden_iframe" 
+                      onsubmit="submitted=true;" 
+                      class="space-y-6">
+
+                    <!-- Full Name -->
+                    <div>
+                        <label for="name" class="block text-sm font-semibold text-navy mb-2">Full Name *</label>
+                        <input type="text" id="name" name="entry.YOUR_NAME_ENTRY_ID" required class="form-input w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Enter your full name">
+                    </div>
+
+                    <!-- Email Address -->
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-navy mb-2">Email Address *</label>
+                        <input type="email" id="email" name="entry.YOUR_EMAIL_ENTRY_ID" required class="form-input w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="you@example.com">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="phone" class="block text-sm font-semibold text-navy mb-2">Phone Number *</label>
+                        <input type="tel" id="phone" name="entry.YOUR_PHONE_ENTRY_ID" required class="form-input w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="+91 XXXXX XXXXX">
+                    </div>
+
+                    <!-- Selected Subject / Course -->
+                    <div>
+                        <label for="course" class="block text-sm font-semibold text-navy mb-2">Selected Subject / Course *</label>
+                        <select id="course" name="entry.YOUR_COURSE_ENTRY_ID" required class="form-select w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white">
+                            <option value="" disabled selected hidden>-- Select a Course --</option>
+                            <option value="3D Equalizer">3D Equalizer</option>
+                            <option value="3D Modeling in 3Ds Max">3D Modeling in 3Ds Max</option>
+                            <option value="3D Modeling in Maya">3D Modeling in Maya</option>
+                            <option value="3ds Max/Maya Rig and Animation">3ds Max/Maya Rig and Animation</option>
+                            <option value="Adobe Express">Adobe Express</option>
+                            <option value="Advanced Graphic Design with AI">Advanced Graphic Design with AI</option>
+                            <option value="Architecture Design">Architecture Design</option>
+                            <option value="Blender Motion Design">Blender Motion Design</option>
+                            <option value="Marvelous Designer">Marvelous Designer</option>
+                            <option value="Mocha Pro">Mocha Pro</option>
+                            <option value="Motion Graphics Pro - After Effects with AI">Motion Graphics Pro - After Effects with AI</option>
+                            <option value="Print Media Design with CorelDraw">Print Media Design with CorelDraw</option>
+                            <option value="Print Media Design with Illustrator and Indesign with AI">Print Media Design with Illustrator and Indesign with AI</option>
+                            <option value="Roto and Paint Prep">Roto and Paint Prep</option>
+                            <option value="Sound Editing">Sound Editing</option>
+                            <option value="Substance Painter">Substance Painter</option>
+                            <option value="Video Editing Pro with AI">Video Editing Pro with AI</option>
+                            <option value="Visual Effects (VFX)">Visual Effects (VFX)</option>
+                            <option value="Zbrush">Zbrush</option>
+                        </select>
+                    </div>
+
+                    <!-- Preferred Date & Time -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="date" class="block text-sm font-semibold text-navy mb-2">Preferred Date *</label>
+                            <input type="date" id="date" name="entry.YOUR_DATE_ENTRY_ID" required class="form-input w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                        <div>
+                            <label for="time" class="block text-sm font-semibold text-navy mb-2">Preferred Time *</label>
+                            <select id="time" name="entry.YOUR_TIME_ENTRY_ID" required class="form-select w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white">
+                                <option value="">-- Select Time --</option>
+                                <option value="07:00 AM - 09:00 AM">07:00 AM - 09:00 AM</option>
+                                <option value="09:00 AM - 12:00 NOON">09:00 AM - 12:00 NOON</option>
+                                <option value="12:00 NOON - 04:00 PM">12:00 NOON - 04:00 PM</option>
+                                <option value="04:00 PM - 07:00 PM">04:00 PM - 07:00 PM</option>
+                                <option value="07:00 PM - 09:00 PM">07:00 PM - 09:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Inquiry Type -->
+                    <div>
+                        <label class="block text-sm font-semibold text-navy mb-2">Inquiry Type</label>
+
+                        <!-- Flex container to align both options in a single row -->
+                        <div class="flex flex-row items-center gap-4">
+
+                            <!-- Option 1: Book Demo -->
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" name="inquiry_type" class="w-4 h-4 text-orange-500">
+                                <a href="https://forms.gle/HTTkF7m64Qc4TVkB7" target="_blank" rel="noopener noreferrer" 
+                                class="bg-orange-500 hover:bg-orange-600 text-navy font-semibold px-4 py-2 rounded-lg transition-colors duration-150 shadow-md inline-block">
+                                Book Demo Session
+                                </a>
+                            </label>
+
+                            <!-- Option 2: General Inquiry -->
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" name="inquiry_type" class="w-4 h-4 text-orange-500">
+                                <a href="#" target="_blank" rel="noopener noreferrer" 
+                                class="bg-orange-500 hover:bg-orange-600 text-navy font-semibold px-4 py-2 rounded-lg transition-colors duration-150 shadow-md inline-block">
+                                General Inquiry
+                                </a>
+                            </label>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Additional Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-navy mb-2">Additional Message (Optional)</label>
+                        <textarea id="message" name="entry.YOUR_MESSAGE_ENTRY_ID" rows="4" class="form-input w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Any specific questions or requirements?"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold text-lg py-4 rounded-lg shadow-md hover:bg-blue-700 transition duration-150 ease-in-out">
+                            Submit
+                        </button>
+                    </div>
+
+                    <!-- Privacy Notice -->
+                    <div class="text-center text-xs text-gray-500 pt-4 border-t border-gray-200">
+                        <p>By submitting this form, you agree to our Privacy Policy and Terms of Service. We respect your privacy and will never share your information.</p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var submitted = false;
+</script>
+
+                        <!-- Alternative Contact Methods -->
+                        <div class="mt-8 text-center">
+                           
+                            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                     
+    <!-- ===== FAQ Section ===== -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Got questions? We've got answers. Here are some of the most common questions about our courses and demo sessions.
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div data-faq class="bg-white rounded-xl shadow-lg p-6 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-navy">Do I need any design experience?</h3>
+                        <svg data-faq-icon class="w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-content">
+                        <p class="text-gray-600 mt-4 leading-relaxed">
+                            No. Our beginner courses start from the basics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div data-faq class="bg-white rounded-xl shadow-lg p-6 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-navy">What is the minimum qualification?</h3>
+                        <svg data-faq-icon class="w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-content">
+                        <p class="text-gray-600 mt-4 leading-relaxed">
+                            Usually 10th pass is enough. Basic computer knowledge is helpful.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div data-faq class="bg-white rounded-xl shadow-lg p-6 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-navy">What documents are required?</h3>
+                        <svg data-faq-icon class="w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-content">
+                        <p class="text-gray-600 mt-4 leading-relaxed">
+                            Aadhaar Card and Educational Certificate
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div data-faq class="bg-white rounded-xl shadow-lg p-6 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-navy">Do you provide demo classes?</h3>
+                        <svg data-faq-icon class="w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-content">
+                        <p class="text-gray-600 mt-4 leading-relaxed">
+                            Demo class is free
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA Banner ===== -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-navy to-navy-light text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Career?</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Book your free demo session today and take the first step toward mastering in-demand creative and technical skills.
+            </p>
+            <div class="col-span-1 md:col-span-2 flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+                    <a href="courses.html" class="w-full sm:w-auto inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg shadow-md transition duration-200 text-center">
+                        Explore Our Courses
+                    </a>
+                  
+        </div>
+    </section>
+
+     <footer class="bg-navy text-gray-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-y-8 gap-x-4 md:gap-x-6">
+                
+                <!-- Brand & About -->
+                <div class="md:col-span-3">
+                    <div class="flex items-center space-x-3 mb-6">            
+                    <span class="text-orange font-bold text-xl">D PixelTactile Films and Design</span>
+                    
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Empowering learners worldwide with industry-relevant skills through expert-led, project-based online education.
+                    </p>
+                    <div class="flex space-x-3">
+                    <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.52 8.52 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-500 transition-colors">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0z"/></svg>
+                    </a>
+                </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="md:col-span-2">
+                <h4 class="text-orange font-bold text-lg mb-6">Quick Links</h4>
+                <ul class="space-y-1 text-sm text-gray-400">
+                    <li><a href="index.html" class="hover:text-orange-500 transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-orange-500 transition-colors">About Us</a></li>
+                    <li><a href="courses.html" class="hover:text-orange-500 transition-colors">Courses</a></li>
+                    <li><a href="portfolio.html" class="hover:text-orange-500 transition-colors">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-orange-500 transition-colors">Contact</a></li>
+                    <li><a href="contact.html" class="hover:text-orange-500 transition-colors">Book Demo</a></li>
+                </ul>
+            </div>
+                
+                <!-- Courses -->
+                <div class="md:col-span-2">
+                <h4 class="text-orange font-bold text-lg mb-6">Courses</h4>
+                <ul class="space-y-1 text-sm text-gray-400">
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">Advanced Graphic Design with AI</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">Print Media Design</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">CorelDraw Design</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">Video Editing Pro with AI</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">Motion Graphics Pro</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange-500 transition-colors">Sound Editing</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Marvelous Designer</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Zbrush</a></li>
+                       </ul>
+            </div>
+                <div class="md:col-span-2 pt-0 md:pt-11">
+                    <ul class="space-y-1 text-sm text-gray-400">
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">3D Modeling in Maya</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">3D Modeling in 3Ds Max</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Substance Painter</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">3ds Max/Maya Rig and Animation</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Blender Motion Design</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Architecture Design</a></li>
+                    <li><a href="course-detail.html" class="hover:text-orange transition-colors">Visual Efects(VFX)</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div class="md:col-span-2">
+                    <h3 class="text-orange font-bold text-lg mb-6">Contact Info</h3>
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="font-semibold text-white">Email</p>
+                            <p class="text-gray-400">hello@dpixeltactilefilmsanddesign.com</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white">Phone</p>
+                            <p class="text-gray-400">+91 97117 37637</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white">Address</p>
+                            <p class="text-gray-400">Onine</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white">Support Hours</p>
+                            <p class="text-gray-400">Mon-Sat: 9AM - 6PM GMT</p>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="mt-6">
+                        <form class="flex">
+                            <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 text-sm text-navy rounded-l-lg focus:outline-none">
+                            <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-r-lg transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9-7-9-7-9 7 9 7z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19V5"></path></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 D PixelTactile Films and Design All rights reserved. | Designed with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
